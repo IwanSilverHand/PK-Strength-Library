@@ -1,0 +1,97 @@
+/* Styles for the exercise cards */
+@import url(./exercise-cards.css);
+@import url(./styleguide.css);
+@import url(./modal.css);
+
+@font-face {
+    font-family: work-sans;
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+
+body {
+    font-family: work-sans;
+    margin: 0;
+
+}
+
+.site-logo {
+    font-family: work-sans;
+    font-size: var(--fs-h1);
+    font-weight: 800;
+    margin: 0;
+    /*color: var(--black);*/
+}
+
+.site-header {
+    font-size: 14px;
+    margin: 0;
+    font-weight: normal;
+    color: var(--black);
+}
+
+header{
+    padding-top: 24px;
+}
+
+.main-wrap {
+    background-color: var(--white);
+    min-height: 100svh;
+}
+
+.section {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.container {
+    max-width: 1728px;
+    margin: auto;
+}
+
+.exercises{
+    margin-top: 64px;
+}
+
+.exercises-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 32px;
+}
+
+
+
+/* Breakpoints*/
+/* Laptop */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 425px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
