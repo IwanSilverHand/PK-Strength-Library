@@ -1,5 +1,6 @@
 .modal {
-    background-color: var(--white);
+    /* background-color: var(--white); */
+    background-color: beige;
     min-height: 100svh;
     max-height: 100svh;
     position: fixed;
@@ -9,6 +10,7 @@
     right: 0;
     overflow: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .modal-wrap {
@@ -19,8 +21,8 @@
 }
 
 .modal-img {
-    width: 402px;
-    height: 226px;
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 
 .modal-name{
